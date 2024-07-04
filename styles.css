@@ -1,0 +1,316 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #19171d ;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0a080f;
+    padding: 10px 20px;
+}
+
+.navbar-logo img {
+    height: 50px;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar-links li {
+    margin: 0 15px;
+    transition: 0.4s;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+.navbar-links :hover{
+    transform: scale(1.1);
+    transition: 0.4s;
+    color: #FF751A;
+}
+
+.icon img {
+    width: 30px;
+    height: 30px;
+    transition: 0.4s;
+}
+
+.icon img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+}
+
+.icon img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.icon :hover{
+    transform: scale(1.8);
+    transition: 0.4s;
+}
+
+.carousel {
+    position: relative;
+    max-width: 90%;
+    margin: 20px auto;
+    overflow: hidden;
+    font-size: x-large;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.carousel-item img {
+    width: 100%;
+    display: block;
+    transition: 0.4s;
+}
+
+.carousel-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.carousel-logo {
+    max-width: 300px;   
+    height: auto;       
+    margin-bottom: 10px;
+    object-fit: contain; 
+}
+
+.carousel-item:hover img {
+    transform: scale(1.05);
+    transition: 0.4s;
+}
+ 
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.indicator {
+    width: 10px;
+    height: 10px;
+    background-color: #FF751A;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.indicator:hover {
+    transform: scale(1.5);
+}
+
+.indicator.active {
+    background-color: #ffc29a;
+}
+
+.catalog-container {
+    width: 90%; 
+    margin: 0 auto; 
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px; 
+    padding: 0 20px; 
+    color: white;
+}
+
+.catalog {
+    display: flex;
+    transition: transform 0.5s ease;
+    margin: 0 -10px; /* Margens negativas para compensar o espaçamento entre itens */
+}
+
+.catalog-item {
+    flex: 0 0 220px; 
+    text-align: center;
+    margin: 0 10px; 
+    transition: 0,4s;
+    width: 1000px;
+    font-size: large;
+}
+
+.catalog-item:hover img {
+    transform: scale(1.05);
+    transition: 0.4s;
+}
+
+.catalog img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: 0.4s;
+}
+
+.catalog-prev,
+.catalog-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo com transparência */
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px; /* Tamanho do ícone */
+    width: 40px; /* Largura dos botões */
+    height: 40px; /* Altura dos botões */
+}
+
+.catalog-prev {
+    left: 0; 
+}
+
+.catalog-next {
+    right: 0;
+}
+
+
+.continue-watching-container {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    color: white;
+    transition: 0.4s;
+}
+
+.continue-watching :hover{
+    transform: scale(1.02);
+    transition: 0.4s;
+}
+
+.continue-watching {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.continue-watching-item {
+    flex: 0 0 300px; /* Tamanho fixo maior dos itens do catálogo */
+    text-align: center;
+    margin: 0 10px;
+    position: relative;
+}
+
+.image-container {
+    position: relative;
+}
+
+.continue-watching img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.progress-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background-color: rgb(228, 83, 0);
+}
+
+.info {
+    text-align: left;
+    margin-top: 5px;
+}
+
+.info .title {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    color: white;
+}
+
+.info .episode {
+    font-size: 14px;
+    margin: 0;
+    color: white;
+}
+
+.continue-watching-prev,
+.continue-watching-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+
+.continue-watching-prev {
+    left: 0;
+}
+
+.continue-watching-next {
+    right: 0;
+}
+
+.continue-watching-prev:hover,
+.continue-watching-next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.continue-watching-prev::before,
+.continue-watching-next::before {
+    content: '';
+    display: inline-block;
+    color: #fff;
+}
