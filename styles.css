@@ -20,6 +20,12 @@ body {
 
 .navbar-logo img {
     height: 50px;
+    transition: 0.4s;
+}
+
+.navbar-logo img:hover{
+    transform: scale(1.07);
+    transition: 0.4s;
 }
 
 .navbar-links {
@@ -313,4 +319,100 @@ body {
     content: '';
     display: inline-block;
     color: #fff;
+}
+
+.gallery-section {
+    margin: 20px;
+}
+
+.gallery-section h2 {
+    text-align: center;
+    color: #c5c5c5;
+    transition: 0.2s;
+}
+
+.gallery-section h2 :hover{
+    font-size: x-large;
+    transition: 0.4s;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery-item {
+    text-align: center;
+    width: 200px; /* Define a largura fixa */
+}
+
+.gallery-item img {
+    width: 100%; /* Preenche toda a largura do container */
+    height: 300px; /* Define a altura fixa */
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #dddddd;
+    word-wrap: break-word; /* Permite a quebra de linha nas palavras longas */
+}
+
+.premium-plans {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.premium-plans h2 {
+    text-align: center;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.plan {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.plan h3 {
+    color: #333333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.plan p {
+    color: #666666;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.plan a.btn {
+    display: inline-block;
+    background-color: #ff6600;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.plan a.btn:hover {
+    background-color: #e65100;
 }

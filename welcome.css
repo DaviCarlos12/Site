@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #19171d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0a080f;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.navbar-logo img {
+    height: 50px;
+    transition: 0.4s;
+}
+
+.navbar-logo img:hover {
+    transform: scale(1.07);
+    transition: 0.4s;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar-links li {
+    margin: 0 15px;
+    transition: 0.4s;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+.navbar-links a:hover {
+    transform: scale(1.1);
+    transition: 0.4s;
+    color: #FF751A;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+}
+
+.icon img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+.icon:hover img {
+    transform: scale(1.8);
+    transition: 0.4s;
+}
+
+.welcome-container, .next-container {
+    text-align: center;
+    background: rgba(112, 111, 110, 0.432);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+h1 {
+    margin-bottom: 1rem;
+    color: #ebebeb;
+    text-align: center;
+}
+
+p {
+    margin-bottom: 2rem;
+    color: rgb(235, 235, 235);
+    text-align: justify;
+    font-size: large;
+    border: none;
+}
+
+button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #FF751A;
+    color: white;
+    cursor: pointer;
+    align-content: center;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #e05a00;
+    transform: scale(1.07);
+    transition: 0.4s;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #19171d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0a080f;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.navbar-logo img {
+    height: 50px;
+    transition: 0.4s;
+}
+
+.navbar-logo img:hover {
+    transform: scale(1.07);
+    transition: 0.4s;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar-links li {
+    margin: 0 15px;
+    transition: 0.4s;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+.navbar-links a:hover {
+    transform: scale(1.1);
+    transition: 0.4s;
+    color: #FF751A;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+}
+
+.icon img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+.icon:hover img {
+    transform: scale(1.8);
+    transition: 0.4s;
+}
+
+.welcome-container {
+    text-align: center;
+    background: rgba(112, 111, 110, 0.432);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin-top: 20px;
+    color: #ebebeb;
+}
+
+
+.premium-plans {
+    display: flex;
+    justify-content: space-around; /* Para distribuir as caixas igualmente com espaço ao redor */
+    flex-wrap: wrap; /* Para que as caixas quebrem para a próxima linha se não couberem em uma linha */
+}
+
+.plan {
+    flex: 1 1 300px; /* Define o tamanho mínimo, preferido e máximo da caixa */
+    margin: 10px; /* Margem entre as caixas */
+    padding: 20px;
+    background-color: rgba(112, 111, 110, 0.432);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+.plan h3 {
+    color: #FF751A;
+}
+
+.plan p {
+    color: rgb(235, 235, 235);
+    margin-top: 5px;
+    text-align: left;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #FF751A;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e05a00;
+    transform: scale(1.07);
+}
+

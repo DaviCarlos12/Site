@@ -4,5 +4,5 @@ document.getElementById('login-form').addEventListener('submit', function(event)
     // Normally you would perform validation and send data to server for authentication
     // For demonstration purposes, just redirect to another page
 
-    window.location.href = 'index.html'; // Replace with your target page
+    window.location.href = 'welcome.html'; // Replace with your target page
 });

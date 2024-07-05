@@ -1,3 +1,4 @@
+
 let currentIndex = 0;
 let autoSlideInterval;
 
