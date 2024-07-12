@@ -133,6 +133,7 @@ body {
     background-color: #0a080f;
     width: 100%;
     padding: 10px 20px;
+    flex-wrap: wrap;
 }
 
 .navbar-logo img {
@@ -148,6 +149,8 @@ body {
 .navbar-links {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .navbar-links li {
@@ -196,6 +199,21 @@ body {
     color: #ebebeb;
 }
 
+@media (max-width: 768px) {
+    .navbar-logo img{
+        width: 170px;
+        height: auto; 
+    }
+}
+
+
+@media (max-width: 480px) {
+    .navbar-logo img{
+        width: 120px;
+        height: auto; 
+    }
+
+}
 
 .premium-plans {
     display: flex;

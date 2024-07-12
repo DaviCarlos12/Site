@@ -16,10 +16,17 @@ body {
     align-items: center;
     background-color: #0a080f;
     padding: 10px 20px;
+    flex-wrap: wrap;
+}
+
+.navbar-logo {
+    width: 150px;
+    height: auto; 
 }
 
 .navbar-logo img {
-    height: 50px;
+    width: 256px;
+    height: auto;
     transition: 0.4s;
 }
 
@@ -31,6 +38,8 @@ body {
 .navbar-links {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .navbar-links li {
@@ -122,6 +131,54 @@ body {
     object-fit: contain; 
 }
 
+.carousel-logo {
+    width: 200px; 
+}
+
+.carousel-content h2 {
+    font-size: 2em; 
+}
+
+.carousel-content p {
+    font-size: 1em;
+}
+
+@media (max-width: 768px) {
+    .carousel-content h2 {
+        font-size: 0.9em; 
+    }
+
+    .carousel-content p {
+        font-size: 0.4em; 
+    }
+    .navbar-logo img{
+        width: 170px;
+        height: auto; 
+    }
+
+    .carousel-content img {
+        width: 130px; 
+    }
+}
+
+
+@media (max-width: 480px) {
+    .carousel-content h2 {
+        font-size: 0.8em; 
+    }
+
+    .carousel-content p {
+        font-size: 0.3em; 
+    }
+    .navbar-logo img{
+        width: 120px;
+        height: auto; 
+    }
+
+    .carousel-content img {
+        width: 100px; 
+    }
+}
 .carousel-item:hover img {
     transform: scale(1.05);
     transition: 0.4s;
@@ -245,9 +302,11 @@ body {
 }
 
 .continue-watching img {
-    width: 100%;
-    height: auto;
+    width: 300px; /* Defina a largura desejada */
+    height: 169px; /* Defina a altura desejada para manter a proporção 16:9 */
     border-radius: 8px;
+    object-fit: cover; /* Faz a imagem cobrir o container mantendo a proporção */
+    
 }
 
 .progress-bar {

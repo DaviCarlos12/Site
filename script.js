@@ -65,7 +65,7 @@ function showItem(index) {
 }
 
 nextButton.addEventListener('click', () => {
-    if (currentCatalogIndex < totalItems - 4) { // Ajuste '5' conforme o número de itens visíveis
+    if (currentCatalogIndex < totalItems - 1) { // Ajuste '5' conforme o número de itens visíveis
         currentCatalogIndex++;
         showItem(currentCatalogIndex);
     }
@@ -93,7 +93,7 @@ function showContinueItem(index) {
 }
 
 continueNextButton.addEventListener('click', () => {
-    if (currentContinueIndex < totalContinueItems - 3) { // Ajuste '5' conforme o número de itens visíveis
+    if (currentContinueIndex < totalContinueItems - 1) { // Ajuste '5' conforme o número de itens visíveis
         currentContinueIndex++;
         showContinueItem(currentContinueIndex);
     }
